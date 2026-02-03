@@ -75,25 +75,26 @@ WSGI_APPLICATION = 'azure_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'mssql',
-#         'NAME': 'bearlab-db',
-#         'USER': 'bearlab-admin',
-#         'PASSWORD': '@dmin1234567',
-#         'HOST': 'bearlab-server.database.windows.net',
-#         'PORT': '1433',
-#         'OPTIONS': {
-#             'driver': 'ODBC Driver 18 for SQL Server',
-#         },
-#     },
-# }
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
+DATABASES = {
+     'default': {
+         'ENGINE': 'mssql',
+         'NAME': 'inc372-test-m',
+         'USER': 'supavit.sutha',
+         'PASSWORD': 'Oishilemon_11',
+         'HOST': 'inc372-test-m.database.windows.net',
+         'PORT': '1433',
+         'OPTIONS': {
+             'driver': 'ODBC Driver 18 for SQL Server',
+         },
+     },
+ }
 
 
 # Password validation
